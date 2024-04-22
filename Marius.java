@@ -2,7 +2,7 @@ public class Marius
 {
 	public static void main (String[] args)
 	{
-		System.out.println("Justin stinkt");
+		System.out.println("Marius stinkt");
 	}
 
 }
