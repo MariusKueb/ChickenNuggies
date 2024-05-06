@@ -2,9 +2,16 @@ package de.bkbocholt.wwm;
 
 public class Frage {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private String frage, richtigeAntwort;
+	private String[] antworten;
 
+	public Frage(String frage, String richtigeAntwort, String[] antworten)
+	{
+		this.frage = frage;
+		this.richtigeAntwort = richtigeAntwort;
+		this.antworten = antworten;
 	}
+
+	
 
 }
