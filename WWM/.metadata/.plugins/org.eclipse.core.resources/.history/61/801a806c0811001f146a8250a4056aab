@@ -1,0 +1,33 @@
+package de.bkbocholt.wwm;
+
+import java.util.Random;
+
+public class Spiel 
+{
+	Frage[] fragenKatalog;
+
+	public Spiel()
+	{
+		fragenKatalog = new Frage[5];
+		String[] antworten = {"30","25","40","60"};
+		fragenKatalog[0] = new Frage("Wie alt ist Justin?","30",antworten);
+		fragenKatalog[1] = new Frage("Wie alt ist Marius?","30",antworten);
+		fragenKatalog[2] = new Frage("Wie alt ist Peter?","30",antworten);
+		fragenKatalog[3] = new Frage("Wie alt ist Tomas?","30",antworten);
+		fragenKatalog[4] = new Frage("Wie alt ist htdtdytd?","30",antworten);
+	}
+	
+	public String getFrage()
+	{
+		Random random = new Random();
+		int i = random.nextInt(4);
+		Frage randomFrage = fragenKatalog[i];
+		return randomFrage.getFrage();
+	}
+	
+	public String getAntwort(String frage)
+	{
+		for(int i = 0; i > fragenKatalog.length; i++)
+	}
+
+}

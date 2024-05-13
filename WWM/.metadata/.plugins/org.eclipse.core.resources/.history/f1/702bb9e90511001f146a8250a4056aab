@@ -1,0 +1,19 @@
+package de.bkbocholt.wwm;
+
+public class Spiel 
+{
+	Frage[] fragenKatalog;
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+	public Spiel()
+	{
+		fragenKatalog = new Frage[5];
+		String[] antworten = {"1","2"};
+		fragenKatalog[0] = new Frage("Wie alt ist Justin?","1",antworten);
+	}
+
+}

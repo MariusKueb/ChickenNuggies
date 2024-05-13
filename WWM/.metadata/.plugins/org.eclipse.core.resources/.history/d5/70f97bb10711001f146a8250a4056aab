@@ -1,0 +1,13 @@
+package de.bkbocholt.wwm;
+
+public class tester 
+{
+	Spiel spiel;
+	public static void main(String[] args) 
+	{
+		spiel = new Spiel();
+		
+
+	}
+
+}

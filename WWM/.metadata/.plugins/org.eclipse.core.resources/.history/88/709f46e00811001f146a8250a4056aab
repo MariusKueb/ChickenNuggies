@@ -1,0 +1,14 @@
+package de.bkbocholt.wwm;
+
+public class tester 
+{
+	private static Spiel spiel;
+	public static void main(String[] args) 
+	{
+		spiel = new Spiel();
+		System.out.println(spiel.getRandomFrage());
+		System.out.println(spiel.getRandomFrage());
+
+	}
+
+}

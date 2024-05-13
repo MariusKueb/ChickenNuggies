@@ -1,0 +1,17 @@
+package de.bkbocholt.wwm;
+
+public class Spiel 
+{
+	Fragenkatalog[] Fragen;
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+	public Spiel()
+	{
+		
+	}
+
+}
