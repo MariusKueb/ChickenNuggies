@@ -66,7 +66,7 @@ public class SpielGUI extends JFrame {
 		JButton btnNewButton_1 = new JButton("Hauptmen\u00FC");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFrame fenster=new ErsteGUI();
+				JFrame fenster=new HauptmenueGUI();
 				fenster.setVisible(true);
 				SpielGUI.this.dispose();
 			}
