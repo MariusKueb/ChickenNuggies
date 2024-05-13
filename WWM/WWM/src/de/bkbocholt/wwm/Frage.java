@@ -28,6 +28,4 @@ public class Frage
 		return frage;
 	}
 
-	
-
 }
