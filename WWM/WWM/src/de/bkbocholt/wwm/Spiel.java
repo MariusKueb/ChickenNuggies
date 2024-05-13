@@ -1,7 +1,5 @@
 package de.bkbocholt.wwm;
 
-import java.util.Random;
-
 public class Spiel 
 {
 	Frage[] fragenKatalog;
