@@ -37,4 +37,17 @@ public class Spiel
 		return "keine Solche Frage vorhanden bitte andere nehmen";
 	}
 
+	public String[] getAntwortMoeglichkeiten(String frage)
+	{
+		for(int i = 0; i > fragenKatalog.length; i++)
+		{
+			if(fragenKatalog[i].getFrage().equals(frage))
+			{
+				return fragenKatalog[i].getAntworten();
+			}
+		}
+		return null;
+
+	}
+
 }
