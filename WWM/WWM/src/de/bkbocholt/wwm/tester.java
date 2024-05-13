@@ -8,7 +8,7 @@ public class tester
 		spiel = new Spiel();
 		String ss = spiel.getRandomFrage();
 		System.out.println(ss);
-		System.out.println(spiel.getAntwort(ss));
+		System.out.println(spiel.getAntwort("Wie alt ist Marius?"));
 
 	}
 
