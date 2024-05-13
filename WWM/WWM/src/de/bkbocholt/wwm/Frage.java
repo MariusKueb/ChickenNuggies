@@ -13,17 +13,17 @@ public class Frage
 		this.antworten = antworten;
 	}
 
-	public String getRichtigeAntwort
+	public String getRichtigeAntwort()
 	{
 		return richtigeAntwort;
 	}
 
-	public String getAntworten
+	public String[] getAntworten()
 	{
 		return antworten;
 	}
 
-	public String getFrage
+	public String getFrage()
 	{
 		return frage;
 	}
