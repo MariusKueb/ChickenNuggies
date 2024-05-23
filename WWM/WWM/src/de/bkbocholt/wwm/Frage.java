@@ -6,7 +6,7 @@ public class Frage
 	private String frage, richtigeAntwort;
 	private String[] antworten;
 
-	public Frage(String frage, String richtigeAntwort, String[] antworten)
+	public Frage(String frage, String[] antworten, String richtigeAntwort)
 	{
 		this.frage = frage;
 		this.richtigeAntwort = richtigeAntwort;
