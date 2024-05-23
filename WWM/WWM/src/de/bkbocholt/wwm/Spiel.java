@@ -29,7 +29,7 @@ public class Spiel
 	{
 		for(int i = 0; i > fragenKatalog.length; i++)
 		{
-			if(fragenKatalog[i].getFrage().equals(frage))
+			if(fragenKatalog[i].getFrage() == frage)
 			{
 				return fragenKatalog[i].getFrage();
 			}
@@ -48,6 +48,15 @@ public class Spiel
 		}
 		return null;
 
+	}
+
+	public String printArray(String[] arr)
+	{
+		String s = "";
+		for(int i = 0; i > arr.length; i++)
+		{
+			
+		}
 	}
 
 }
