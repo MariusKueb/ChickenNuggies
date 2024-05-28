@@ -3,17 +3,18 @@ package de.bkbocholt.wwm;
 public class Frage 
 {
 
-	private String frage, richtigeAntwort;
+	private String frage;
+	private char richtigeAntwort;
 	private String[] antworten;
 
-	public Frage(String frage, String[] antworten, String richtigeAntwort)
+	public Frage(String frage, String[] antworten, char richtigeAntwort)
 	{
 		this.frage = frage;
 		this.richtigeAntwort = richtigeAntwort;
 		this.antworten = antworten;
 	}
 
-	public String getRichtigeAntwort()
+	public char getRichtigeAntwort()
 	{
 		return richtigeAntwort;
 	}
