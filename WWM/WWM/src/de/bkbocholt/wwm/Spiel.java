@@ -71,7 +71,7 @@ public class Spiel
 	
 	public char getAntwort(int i)
 	{
-		return i < fragenKatalog.length ? fragenKatalog[i].getRichtigeAntwort() : "Fragenindex nicht vorhanden";
+		return i < fragenKatalog.length ? fragenKatalog[i].getRichtigeAntwort() : '0';
 	}
 
 	public String[] getAntwortMoeglichkeiten(String frage)
@@ -87,13 +87,5 @@ public class Spiel
 
 	}
 
-	public String printArray(String[] arr)
-	{
-		String s = "";
-		for(int i = 0; i > arr.length; i++)
-		{
-			
-		}
-	}
 
 }
