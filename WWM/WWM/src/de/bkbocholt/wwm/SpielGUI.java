@@ -38,6 +38,8 @@ public class SpielGUI extends JFrame {
 	public SpielGUI() {
 		
 		spiel = new Spiel();
+		Frage frage = spiel.getRandomFrage();
+		String[] antworten = frage.getAntworten();
 		
 		setTitle("Wer wird Million\u00E4r");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -47,19 +49,29 @@ public class SpielGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel(spiel.getRandomFrage());
+		JLabel lblNewLabel = new JLabel(frage.getFrage());
 		lblNewLabel.setBounds(10, 62, 564, 74);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("Antwort 1");
+		btnNewButton.setText(antworten[0]);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
+				{
+					btnNewButton.setText("Richtig");
+				}
+				else
+				{
+					btnNewButton.setText("Falsch");
+				}
 			}
 		});
 		btnNewButton.setBounds(10, 230, 270, 50);
 		contentPane.add(btnNewButton);
 		
 		JButton btnAntwort = new JButton("Antwort 2");
+		btnAntwort.setText(antworten[1]);
 		btnAntwort.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -68,6 +80,7 @@ public class SpielGUI extends JFrame {
 		contentPane.add(btnAntwort);
 		
 		JButton btnAntwort_1 = new JButton("Antwort 3");
+		btnAntwort_1.setText(antworten[2]);
 		btnAntwort_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -76,6 +89,7 @@ public class SpielGUI extends JFrame {
 		contentPane.add(btnAntwort_1);
 		
 		JButton btnAntwort_2 = new JButton("Antwort 4");
+		btnAntwort_2.setText(antworten[3]);
 		btnAntwort_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -94,5 +108,6 @@ public class SpielGUI extends JFrame {
 		btnNewButton_1.setBounds(482, 0, 102, 23);
 		contentPane.add(btnNewButton_1);
 	}
+
 
 }

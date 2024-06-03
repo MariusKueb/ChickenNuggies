@@ -61,31 +61,20 @@ public class Spiel
         fragenKatalog[49] = new Frage("Wie viele Zeitzonen hat Russland?", new String[]{"a) 9", "b) 10", "c) 11", "d) 12"}, 'c');
 	}
 	
-	public String getRandomFrage()
+	public Frage getRandomFrage()
 	{
 		Random random = new Random();
 		int i = random.nextInt(50);
 		Frage randomFrage = fragenKatalog[i];
-		return randomFrage.getFrage();
-	}
-	
-	public char getAntwort(int i)
-	{
-		return i < fragenKatalog.length ? fragenKatalog[i].getRichtigeAntwort() : '0';
+		return randomFrage;
 	}
 
-	public String[] getAntwortMoeglichkeiten(String frage)
+    public boolean checkAntwort(Frage frage, char c)
 	{
-		for(int i = 0; i > fragenKatalog.length; i++)
-		{
-			if(fragenKatalog[i].getFrage().equals(frage))
-			{
-				return fragenKatalog[i].getAntworten();
-			}
-		}
-		return null;
-
+        return frage.getRichtigeAntwort()==c;
 	}
+
+    
 
 
 }
