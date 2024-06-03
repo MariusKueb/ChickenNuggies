@@ -36,14 +36,14 @@ public class FalschGUI extends JFrame {
 	 */
 	public FalschGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 240, 140);
+		setBounds(100, 100, 300, 140);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblFalsch = new JLabel("Leider Falsch :(");
-		lblFalsch.setBounds(42, 11, 133, 41);
+		lblFalsch.setBounds(42, 11, 200, 41);
 		contentPane.add(lblFalsch);
 		
 		JButton btnNewButton = new JButton("n\u00E4chste Frage");

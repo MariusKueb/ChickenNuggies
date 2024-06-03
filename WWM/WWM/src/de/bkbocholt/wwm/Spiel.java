@@ -1,5 +1,11 @@
 package de.bkbocholt.wwm;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Random;
 
 public class Spiel 
@@ -74,7 +80,25 @@ public class Spiel
         return frage.getRichtigeAntwort()==c;
 	}
 
+    public void dateiEinlesen() throws IOException
+    {
+        Path file = FileSystems.getDefault().getPath("fragen.txt");
+        InputStream in = Files.newInputStream(file);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        String line = null;
+        while ((line = reader.readLine()) != null)
+        {
+            System.out.println(line);
+        }
+        reader.close();
+    }
+
     
 
+    public void dateiSchreiben()
+    {
+
+    }
+    
 
 }

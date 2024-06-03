@@ -36,14 +36,14 @@ public class RichtigGUI extends JFrame {
 	 */
 	public RichtigGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 240, 140);
+		setBounds(100, 100, 300, 140);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblRichtig = new JLabel("Das war die richtige Antwort!");
-		lblRichtig.setBounds(42, 11, 143, 41);
+		lblRichtig.setBounds(42, 11, 200, 41);
 		contentPane.add(lblRichtig);
 		
 		JButton btnNewButton = new JButton("n\u00E4chste Frage");
