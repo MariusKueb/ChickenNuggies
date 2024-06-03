@@ -59,15 +59,11 @@ public class SpielGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
 				{
-					JFrame fenster=new RichtigGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
+					btnNewButton.setText("Richtig");
 				}
 				else
 				{
-					JFrame fenster=new FalschGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
+					btnNewButton.setText("Falsch");
 				}
 			}
 		});
@@ -78,18 +74,6 @@ public class SpielGUI extends JFrame {
 		btnAntwort.setText(antworten[1]);
 		btnAntwort.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
-				{
-					JFrame fenster=new RichtigGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
-				}
-				else
-				{
-					JFrame fenster=new FalschGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
-				}
 			}
 		});
 		btnAntwort.setBounds(304, 230, 270, 50);
@@ -99,18 +83,6 @@ public class SpielGUI extends JFrame {
 		btnAntwort_1.setText(antworten[2]);
 		btnAntwort_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
-				{
-					JFrame fenster=new RichtigGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
-				}
-				else
-				{
-					JFrame fenster=new FalschGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
-				}
 			}
 		});
 		btnAntwort_1.setBounds(10, 291, 270, 50);
@@ -120,18 +92,6 @@ public class SpielGUI extends JFrame {
 		btnAntwort_2.setText(antworten[3]);
 		btnAntwort_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
-				{
-					JFrame fenster=new RichtigGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
-				}
-				else
-				{
-					JFrame fenster=new FalschGUI();
-					fenster.setVisible(true);
-					SpielGUI.this.dispose();
-				}
 			}
 		});
 		btnAntwort_2.setBounds(304, 291, 270, 50);

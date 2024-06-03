@@ -78,7 +78,7 @@ public class SpielGUI extends JFrame {
 		btnAntwort.setText(antworten[1]);
 		btnAntwort.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
+				if(spiel.checkAntwort(frage, antworten[1].charAt(1)))
 				{
 					JFrame fenster=new RichtigGUI();
 					fenster.setVisible(true);
@@ -99,7 +99,7 @@ public class SpielGUI extends JFrame {
 		btnAntwort_1.setText(antworten[2]);
 		btnAntwort_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
+				if(spiel.checkAntwort(frage, antworten[2].charAt(2)))
 				{
 					JFrame fenster=new RichtigGUI();
 					fenster.setVisible(true);
@@ -120,7 +120,7 @@ public class SpielGUI extends JFrame {
 		btnAntwort_2.setText(antworten[3]);
 		btnAntwort_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(spiel.checkAntwort(frage, antworten[0].charAt(0)))
+				if(spiel.checkAntwort(frage, antworten[3].charAt(3)))
 				{
 					JFrame fenster=new RichtigGUI();
 					fenster.setVisible(true);
