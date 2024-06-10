@@ -14,6 +14,11 @@ public class Frage
 		this.antworten = antworten;
 	}
 
+	public Frage()
+	{
+
+	}
+
 	public char getRichtigeAntwort()
 	{
 		return richtigeAntwort;
@@ -28,5 +33,9 @@ public class Frage
 	{
 		return frage;
 	}
+
+	public void setFrage(String frage) {this.frage = frage;}
+	public void setRichtigeAntwort(char richtigeAntwort) {this.richtigeAntwort = richtigeAntwort;}
+	public void setAntworten(String[] antworten) {this.antworten = antworten;}
 
 }
