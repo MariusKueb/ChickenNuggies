@@ -1,0 +1,32 @@
+!SESSION 2024-06-10 10:06:36.091 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-06-10 10:07:28.269
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2024-06-10 10:07:28.274
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2024-06-10 10:07:28.274
+!MESSAGE Could not write metadata for '/WWM'.
+!STACK 0
+java.nio.file.FileSystemException: H:\GitHub\Fragenkatalog\WWM\.metadata\.plugins\org.eclipse.core.resources\.projects\WWM\.markers: Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird.
+
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:164)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:283)
+	at java.base/java.nio.file.Files.copy(Files.java:1297)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.commit(SafeFileOutputStream.java:83)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.close(SafeFileOutputStream.java:77)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:188)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1722)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1736)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1177)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2333)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:509)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
