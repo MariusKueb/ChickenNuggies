@@ -20,7 +20,7 @@ public class Spiel
 		fragenKatalog = new Frage[50];
         try 
         {
-
+            this.spielerUpdaten("123");
             this.dateiEinlesen();
         } catch (IOException e) 
         {
