@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "HauptmenueGUI",
+            "request": "launch",
+            "mainClass": "de.bkbocholt.wwm.HauptmenueGUI",
+            "projectName": "WWM"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
