@@ -20,6 +20,7 @@ public class Spiel
 		fragenKatalog = new Frage[50];
         try 
         {
+
             this.dateiEinlesen();
         } catch (IOException e) 
         {
@@ -76,7 +77,7 @@ public class Spiel
         Path p = Path.of(spielerName+".txt");
         try
         {
-            Path filePath = Files.writeString(p,aktuellerScore+"/"+bearbeiteteFragen);
+            Path filePath = Files.writeString(p,aktuellerScore+";"+bearbeiteteFragen);
             String s = Files.readString(filePath);
             System.out.println(s);
         }
