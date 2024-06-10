@@ -1,0 +1,117 @@
+package de.bkbocholt.wwm;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class FrargeErstellen extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txtFrage;
+	private JTextField txtAntwortA;
+	private JTextField txtAntwortB;
+	private JTextField txtAntwortC;
+	private JTextField txtAntwortD;
+	private JTextField txtRichtig;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FrargeErstellen frame = new FrargeErstellen();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FrargeErstellen() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 573, 384);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Frage:");
+		lblNewLabel.setBounds(10, 147, 48, 14);
+		contentPane.add(lblNewLabel);
+		
+		txtFrage = new JTextField();
+		txtFrage.setBounds(94, 144, 408, 20);
+		contentPane.add(txtFrage);
+		txtFrage.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("Antwort a");
+		lblNewLabel_1.setBounds(10, 173, 48, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblAntwortB = new JLabel("Antwort b");
+		lblAntwortB.setBounds(10, 200, 48, 14);
+		contentPane.add(lblAntwortB);
+		
+		JLabel lblAntwortC = new JLabel("Antwort c");
+		lblAntwortC.setBounds(10, 228, 48, 14);
+		contentPane.add(lblAntwortC);
+		
+		JLabel lblAntwortD = new JLabel("Antwort d");
+		lblAntwortD.setBounds(10, 253, 48, 14);
+		contentPane.add(lblAntwortD);
+		
+		txtAntwortA = new JTextField();
+		txtAntwortA.setColumns(10);
+		txtAntwortA.setBounds(94, 170, 408, 20);
+		contentPane.add(txtAntwortA);
+		
+		txtAntwortB = new JTextField();
+		txtAntwortB.setColumns(10);
+		txtAntwortB.setBounds(94, 197, 408, 20);
+		contentPane.add(txtAntwortB);
+		
+		txtAntwortC = new JTextField();
+		txtAntwortC.setColumns(10);
+		txtAntwortC.setBounds(94, 225, 408, 20);
+		contentPane.add(txtAntwortC);
+		
+		txtAntwortD = new JTextField();
+		txtAntwortD.setColumns(10);
+		txtAntwortD.setBounds(94, 250, 408, 20);
+		contentPane.add(txtAntwortD);
+		
+		JLabel lblNewLabel_2 = new JLabel("Buchstabe richtige Antwort:");
+		lblNewLabel_2.setBounds(10, 278, 176, 14);
+		contentPane.add(lblNewLabel_2);
+		
+		txtRichtig = new JTextField();
+		txtRichtig.setBounds(180, 275, 96, 20);
+		contentPane.add(txtRichtig);
+		txtRichtig.setColumns(10);
+		
+		JButton button = new JButton("Hauptmen\u00FC");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JFrame fenster=new HauptmenueGUI();
+				fenster.setVisible(true);
+				FrageErstellen.this.dispose();
+			}
+		});
+		button.setBounds(445, 11, 102, 23);
+		contentPane.add(button);
+	}
+}

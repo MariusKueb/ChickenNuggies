@@ -145,7 +145,7 @@ public class SpielGUI extends JFrame {
 				SpielGUI.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(472, 11, 102, 23);
+		btnNewButton_1.setBounds(482, 0, 102, 23);
 		contentPane.add(btnNewButton_1);
 	}
 

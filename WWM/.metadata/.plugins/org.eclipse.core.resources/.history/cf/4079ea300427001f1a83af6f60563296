@@ -43,13 +43,6 @@ public class HauptmenueGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton btnNewButton = new JButton("Fragen erstellen");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JFrame fenster=new FrageErstellenGUI();
-				fenster.setVisible(true);
-				HauptmenueGUI.this.dispose();
-			}
-		});
 		btnNewButton.setBounds(50, 183, 200, 62);
 		contentPane.add(btnNewButton);
 		
