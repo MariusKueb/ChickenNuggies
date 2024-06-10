@@ -46,15 +46,15 @@ public class RichtigGUI extends JFrame {
 		lblRichtig.setBounds(42, 11, 200, 41);
 		contentPane.add(lblRichtig);
 		
-		JButton btnNewButton = new JButton("n\u00E4chste Frage");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnNaechsteFrage = new JButton("n\u00E4chste Frage");
+		btnNaechsteFrage.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFrame fenster=new SpielGUI();
 				fenster.setVisible(true);
 				RichtigGUI.this.dispose();
 			}
 		});
-		btnNewButton.setBounds(42, 65, 133, 23);
-		contentPane.add(btnNewButton);
+		btnNaechsteFrage.setBounds(42, 65, 133, 23);
+		contentPane.add(btnNaechsteFrage);
 	}
 }

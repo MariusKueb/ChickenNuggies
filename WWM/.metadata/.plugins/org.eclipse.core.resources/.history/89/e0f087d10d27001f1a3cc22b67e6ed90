@@ -11,7 +11,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class FalschGUI extends JFrame {
+public class RichtigGUI extends JFrame {
 
 	private JPanel contentPane;
 
@@ -22,7 +22,7 @@ public class FalschGUI extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					FalschGUI frame = new FalschGUI();
+					RichtigGUI frame = new RichtigGUI();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -34,24 +34,24 @@ public class FalschGUI extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public FalschGUI() {
+	public RichtigGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 240, 140);
+		setBounds(100, 100, 300, 140);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblFalsch = new JLabel("Das war die richtige Antwort!");
-		lblFalsch.setBounds(42, 11, 143, 41);
-		contentPane.add(lblFalsch);
+		JLabel lblRichtig = new JLabel("Das war die richtige Antwort!");
+		lblRichtig.setBounds(42, 11, 200, 41);
+		contentPane.add(lblRichtig);
 		
 		JButton btnNewButton = new JButton("n\u00E4chste Frage");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFrame fenster=new SpielGUI();
 				fenster.setVisible(true);
-				FalschGUI.this.dispose();
+				RichtigGUI.this.dispose();
 			}
 		});
 		btnNewButton.setBounds(42, 65, 133, 23);

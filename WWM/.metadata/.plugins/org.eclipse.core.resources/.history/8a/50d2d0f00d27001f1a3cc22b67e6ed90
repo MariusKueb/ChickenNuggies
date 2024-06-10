@@ -42,30 +42,30 @@ public class HauptmenueGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnFrageErstellen = new JButton("Fragen erstellen");
-		btnFrageErstellen.addActionListener(new ActionListener() {
+		JButton btnNewButton = new JButton("Fragen erstellen");
+		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFrame fenster=new FrageErstellenGUI();
 				fenster.setVisible(true);
 				HauptmenueGUI.this.dispose();
 			}
 		});
-		btnFrageErstellen.setBounds(50, 183, 200, 62);
-		contentPane.add(btnFrageErstellen);
+		btnNewButton.setBounds(50, 183, 200, 62);
+		contentPane.add(btnNewButton);
 		
 		JButton btnFragenBearbeiten = new JButton("Fragen bearbeiten");
 		btnFragenBearbeiten.setBounds(296, 183, 200, 62);
 		contentPane.add(btnFragenBearbeiten);
 		
-		JButton btnSpielstart = new JButton("Spiel starten");
-		btnSpielstart.addActionListener(new ActionListener() {
+		JButton btnNewButton_1 = new JButton("Spiel starten");
+		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFrame fenster=new SpielGUI();
 				fenster.setVisible(true);
 				HauptmenueGUI.this.dispose();
 			}
 		});
-		btnSpielstart.setBounds(50, 99, 446, 57);
-		contentPane.add(btnSpielstart);
+		btnNewButton_1.setBounds(50, 99, 446, 57);
+		contentPane.add(btnNewButton_1);
 	}
 }
